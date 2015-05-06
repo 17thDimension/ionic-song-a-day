@@ -1,0 +1,30 @@
+html
+  body
+    ion-view(view-title='{{song.title}}')
+      ion-content(has-header='true', padding='true')
+        p {{song.info}}
+        videogular-container
+          videogular(vg-player-ready='controller.onPlayerReady($API)', vg-complete='controller.onCompleteVideo()', vg-theme='controller.config.theme.url')
+            vg-media(vg-src='controller.config.sources', vg-tracks='controller.config.tracks',vg-type="audio")
+            vg-controls
+              vg-play-pause-button
+              vg-time-display {{ currentTime | date:'mm:ss' }}
+              vg-scrub-bar
+                vg-scrub-bar-current-time
+              vg-time-display {{ timeLeft | date:'mm:ss' }}
+              vg-volume
+                vg-mute-button
+                vg-volume-bar
+              vg-fullscreen-button
+            vg-overlay-play
+            vg-buffering
+            vg-poster(vg-url='controller.config.plugins.poster')
+        .playlist
+          ul
+            li
+              a(ng-click='controller.setVideo(0)') Pale Blue Dot
+            li
+              a(ng-click='controller.setVideo(1)') Big Buck Bunny
+
+
+          a.button.button-small.icon.ion-arrow-left-b(href='#/tab/songs')  All Songs

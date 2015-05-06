@@ -6,12 +6,15 @@ html
         Each tab's child <nav-view> directive will have its own 
         navigation history that also transitions its views in and out.
     ion-tabs.tabs-icon-top.tabs-default.tabs-positive
-      // Pets Tab
-      ion-tab(title='Pets', icon='icon ion-home', href='#/tab/pets')
-        ion-nav-view(name='pets-tab')
-      // Adopt Tab
-      ion-tab(title='Adopt', icon='icon ion-heart', href='#/tab/adopt')
-        ion-nav-view(name='adopt-tab')
+      // Artists Tab
+      ion-tab(title='Songwriters', icon='icon ion-cube', href='#/tab/artists')
+        ion-nav-view(name='artists-tab')
+      // Song Tab
+      ion-tab(title='Songs', icon='icon ion-music-note', href='#/tab/songs')
+        ion-nav-view(name='songs-tab')
+      // person
+      ion-tab(title='Me', icon='icon ion-person', href='#/tab/account')
+        ion-nav-view(name='account-tab')
       // About Tab
-      ion-tab(title='About', icon='icon ion-search', href='#/tab/about')
-        ion-nav-view(name='about-tab')
+      ion-tab(title='Mission', icon='icon ion-coffee', href='#/tab/mission')
+        ion-nav-view(name='mission-tab')

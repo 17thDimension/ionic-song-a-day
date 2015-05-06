@@ -175,7 +175,13 @@ module.exports = new class GulpConfig
           "assets/components/angular-sanitize/angular-sanitize.js"
           "assets/components/angular-ui-router/release/angular-ui-router.js"
           "assets/components/ionic/release/js/ionic-angular.js"
-
+          "assets/components/angularfire/dist/angularfire.js"
+          "assets/components/firebase/firebase.js"
+          "assets/components/videogular/videogular.js"
+          "assets/components/videogular-buffering/vg-buffering.js"
+          "assets/components/videogular-controls/vg-controls.js"
+          "assets/components/videogular-overlay-play/vg-overlay-play.js"
+          "assets/components/videogular-poster/vg-poster.js"
           # Here add any vendor files that should be included in vendor.js
           # (f.e. bower components)
 

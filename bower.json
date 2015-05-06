@@ -14,7 +14,11 @@
   ],
   "dependencies": {
     "ionic": "v1.0.0-beta.14",
-    "angulartics": "~0.17.2"
+    "angulartics": "~0.17.2",
+    "angularfire": "~1.1.1",
+    "videogular" : "latest"
+
+
   },
   "devDependencies": {
     "angular-mocks": "~1.3.6"
